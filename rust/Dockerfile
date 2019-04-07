@@ -8,4 +8,5 @@ ENV PATH "$PATH:/root/.cargo/bin"
 RUN rustup target add i686-pc-windows-gnu && \
     rustup target add x86_64-pc-windows-gnu && \
     rustup component add rustfmt && \
-    rustup component add clippy
+    rustup component add clippy && \
+    cargo install cbindgen
