@@ -10,6 +10,9 @@ RUN apt-get install ca-certificates curl git ssh && apt-get clean
 RUN apt-get install build-essential && apt-get clean
 RUN apt-get install wine wine32 wine64 && apt-get clean
 
+RUN apt-get install python3 python3-pip python3-setuptools && apt-get clean
+RUN pip3 install meson
+
 COPY mingw32.sh /
 RUN bash mingw32.sh
 
