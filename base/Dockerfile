@@ -15,5 +15,7 @@ RUN pip3 install meson
 
 RUN apt-get install mingw-w64 && apt-get clean
 
+RUN apt-get install ninja-build && apt-get clean
+
 # Run wine first-run initialization.
 RUN wine net.exe /HELP
