@@ -1,4 +1,4 @@
-FROM jmgao/ubuntu-cosmic-mingw-w64:latest
+FROM jmgao/ubuntu-focal-mingw-w64:latest
 MAINTAINER Josh Gao
 
 RUN curl https://sh.rustup.rs -sSf | sh -s -- -y
